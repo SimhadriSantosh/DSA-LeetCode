@@ -1,9 +1,9 @@
 class Solution {
 public:
     int strStr(string haystack, string needle) {
-        map<char,int>ne;
+        unordered_map<char,int>ne;
 
-        map<char,int>w;
+        unordered_map<char,int>w;
         for(auto i : needle)ne[i]++;
         int l=0,r=0,n = needle.size();
         while(r<=haystack.size()){
