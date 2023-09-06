@@ -10,7 +10,7 @@ public:
             solve(s,o-1,c,ans);
             s.pop_back();
         }
-        if(c && o<c){
+        if(o<c){
             s.push_back(')');
             solve(s,o,c-1,ans);
             s.pop_back();
