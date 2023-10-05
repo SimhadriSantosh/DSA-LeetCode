@@ -23,8 +23,8 @@ public:
             else if(nums[i]==ele2)c2++;
         }
         vector<int>ans;
-        if(c1>=floor(nums.size()/3.0)+1)ans.push_back(ele1);
-        if(c2>=floor(nums.size()/3.0)+1)ans.push_back(ele2);
+        if(c1>nums.size()/3)ans.push_back(ele1);
+        if(c2>nums.size()/3)ans.push_back(ele2);
         return ans;
     }
 };
